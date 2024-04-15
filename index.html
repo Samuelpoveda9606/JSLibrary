@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Store</title>
+    <!-- Link to your custom CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Glide CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Furniture Store</h1>
+        <!-- Navigation Menu -->
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                    <li id="hero1" class="glide__slide"><img src="assets/Images/1.jpg" alt="Hero Image 1"></li>
+                    <li id="hero2" class="glide__slide"><img src="assets/Images/2.JPG" alt="Hero Image 2"></li>
+                    <li id="hero3" class="glide__slide"><img src="assets/Images/3.jpg" alt="Hero Image 3"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <h2>Featured Products</h2>
+        <!-- Product Grid -->
+        <div class="product-grid">
+            <!-- Products will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p class="about-text">
+            At Our Furniture Store, we are passionate about providing high-quality furniture that enhances the beauty and comfort of your living space. With over 20 years of experience, we specialize in offering a diverse range of furniture pieces, including sofas, chairs, tables, beds, and more.
+
+            Our mission is to create furniture that combines innovative design with exceptional craftsmanship. Each piece is carefully curated to reflect modern aesthetics while ensuring durability and functionality. Whether you're furnishing a cozy apartment or redecorating your home, we have the perfect furniture solutions for every room.
+
+            We prioritize customer satisfaction and strive to exceed expectations with our personalized service and attention to detail. Our team of furniture experts is dedicated to assisting you in finding the ideal pieces that suit your style and budget.
+
+            Visit our showroom or browse our online catalog to discover our latest collections and experience the elegance and quality that define Our Furniture Store.
+        </p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <!-- Contact form will be added here -->
+            <div class="contact-form">
+                <form action="submit.php" method="post">
+                    <label for="name">Your Name:</label>
+                    <input type="text" id="name" name="name" required>
+    
+                    <label for="email">Your Email:</label>
+                    <input type="email" id="email" name="email" required>
+    
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" required></textarea>
+    
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Furniture Store</p>
+    </footer>
+
+    <!-- Glide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- Anime.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
