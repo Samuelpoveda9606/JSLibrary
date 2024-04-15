@@ -63,39 +63,35 @@
         </p>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact">
-        <h2>Contact Us</h2>
-        <!-- Contact form will be added here -->
-            <div class="contact-form">
-                <form action="submit.php" method="post">
-                    <label for="name">Your Name:</label>
-                    <input type="text" id="name" name="name" required>
-    
-                    <label for="email">Your Email:</label>
-                    <input type="email" id="email" name="email" required>
-    
-                    <label for="message">Your Message:</label>
-                    <textarea id="message" name="message" required></textarea>
-    
-                    <button type="submit">Send Message</button>
-                </form>
-            </div>
-    </section>
+   <!-- Contact form -->
+    <div class="contact-form">
+        <form id="contactForm" action="submit.php" method="post" data-parsley-validate>
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required data-parsley-trigger="change" data-parsley-required-message="Please enter your name">
+
+            <label for="email">Your Email:</label>
+            <input type="email" id="email" name="email" required data-parsley-type="email" data-parsley-trigger="change" data-parsley-required-message="Please enter your email" data-parsley-type-message="Please enter a valid email address">
+
+            <label for="message">Your Message:</label>
+            <textarea id="message" name="message" required data-parsley-trigger="change" data-parsley-required-message="Please enter your message"></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
 
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2024 Furniture Store</p>
     </footer>
-
+    <!-- Parsley.js Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js"></script>
     <!-- Glide JS -->
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <!-- Anime.js -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
-    <!-- AOS JS -->
-    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
-    <!-- Custom JavaScript -->
+     <!-- Custom JavaScript -->
     <script src="script.js"></script>
+    
 </body>
 
 </html>

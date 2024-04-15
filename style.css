@@ -10,7 +10,7 @@
 /* Body styles */
 body {
   font-family: Arial, sans-serif;
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
 }
 
 /* Header styles */
@@ -41,8 +41,24 @@ nav ul li a {
 
 /* Hero section styles */
 .hero {
-  max-height: 400px;
-  overflow: scroll;
+    max-height: 400px; /* Adjust max-height as needed */
+    overflow: hidden; /* Hide overflow to prevent image overflow */
+    position: relative; /* Position relative for absolute image positioning */
+}
+
+.glide__slide#hero1 {
+  position: relative; /* Enable relative positioning */
+  top: -160px; /* Move the image 50px upward */
+}
+
+.glide__slide#hero2 {
+  position: relative; /* Enable relative positioning */
+  top: -700px; /* Move the image 50px upward */
+}
+
+.glide__slide#hero3 {
+  position: relative; /* Enable relative positioning */
+  top: -500px; /* Move the image 50px upward */
 }
 
 .glide__slide img {
@@ -148,7 +164,7 @@ button:hover {
   background-color: #555;
 }
 /* Responsive styles */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .product {
       flex: 0 1 calc(50% - 20px); /* 2 items per row with 20px spacing */
   }

@@ -69,11 +69,14 @@ document.addEventListener('DOMContentLoaded', function () {
       delay: 500
   });
 
-  // Initialize AOS (Animate On Scroll)
-  AOS.init({
-      duration: 800,
-      easing: 'ease-out',
-      once: true // Only animate elements once
-  });
+
+  document.addEventListener('DOMContentLoaded', function () {
+    // Initialize Parsley.js on the contact form
+    const contactForm = document.getElementById('contactForm');
+    if (contactForm) {
+        $(contactForm).parsley(); // Initialize Parsley.js
+    }
 });
+});
+
 
